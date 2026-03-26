@@ -1,0 +1,98 @@
+.counter {
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: var(--accent);
+  background: var(--accent-bg);
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+  margin-bottom: 24px;
+}
+
+
+.counter:hover {
+  border-color: var(--accent-border);
+}
+
+
+.counter:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+
+/* RESET GLOBAL */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* LAYOUT GLOBAL */
+.App {
+  min-height: 100vh; /* prend toute la hauteur */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  width: 100%;
+}
+
+
+/* TITRE */
+.logo {
+  font-size: 20px;
+  position: absolute;
+  left: 20px;
+  margin: 0;
+}
+
+
+/* NAV LINKS */
+.nav-links a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+}
+
+
+.nav-links a:hover {
+  color: #61dafb;
+}
+
+
+/* CONTENU */
+.content {
+  flex: 1; /* pousse le footer en bas */
+  padding: 30px 20px; /* espace sous la navbar */
+}
+
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 20px;
+}
